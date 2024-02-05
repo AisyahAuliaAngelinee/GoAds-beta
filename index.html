@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goAds: Best Ads Outsourcing Partner</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="Website icon" type="png" href="assets/logo/logo-no-background.png">
+</head>
+<body>
+
+    <!-- HEADER START -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo/logo-no-background.png" alt="">
+            <h3>Best <span>Ads</span> Outsourcing</h3>
+        </div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- INTRO START -->
+    <div class="intro">
+        <div class="col-2">
+            <h1>Welcome to <span class="g">go</span><span class="A">Ads</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo sed tenetur hic ut, tempora ipsa porro excepturi laudantium consequuntur expedita assumenda fuga molestiae laboriosam asperiores magni? Quia, magnam consequatur?</p>
+            <a href="#" class="btn">Learn More &#x2794;</a>
+        </div>
+        <div class="col-2">
+            <img src="assets/gambar/intro.png">
+        </div>
+    </div>
+    <!-- INTRO END -->
+
+    <!-- BORDER -->
+    <div class="line"></div>
+    
+    <!-- KATEGORI START -->
+    <div class="kategori">
+        <h2 class="judul">Kategori</h2>
+        <div class="small-container">
+            <div class="single-items" id="serviceCategory" onclick="showing('jasa')">
+                <img src="assets/cat/cat-1.webp" alt="">
+                <div class="content">
+                    <h3>SERVICE</h3>
+                </div>
+            </div>
+            <div class="single-items" id="productsCategory" onclick="showing('produk')">
+                <img src="assets/cat/cat-2.webp" alt="">
+                <div class="content">
+                    <h3>PRODUCTS</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- KATEGORI END -->
+    
+    <!-- BORDER LAGI
+    <div class="line"></div> -->
+    
+    <!-- Test Recommend -->
+    <!-- <section class="hero">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>SERVICE</span>
+                        <h3>Wash Your Garage</h3>
+                        <a href="#" class="btn">See Detail</a>
+                    </div>
+                    <div class="image">
+                        <img src="assets/gambar/recomend-1.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>PRODUCTS</span>
+                        <h3>Pasar Jual Mobil Bekas</h3>
+                        <a href="#" class="btn">See Detail</a>
+                    </div>
+                    <div class="image">
+                        <img src="assets/gambar/recomend-2.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>SERVICE</span>
+                        <h3>Hacktiv8 CarWash</h3>
+                        <a href="#" class="btn">See Detail</a>
+                    </div>
+                    <div class="image">
+                        <img src="assets/gambar/recomend-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section> -->
+    
+    
+    <!-- RECOMMENDED START -->
+    <!-- <div class="recommend-container">
+        <h2 class="judul">RECENT POST</h2>
+        <div class="content slide">
+            <img src="assets/gambar/recomend-1.png">
+            <h2>Wash Your Garage</h2>
+            <p>Rp 500.000,00</p>
+            <a href="#" class="btn">See Detail</a>
+        </div>
+        <div class="content slide">
+            <img src="assets/gambar/recomend-2.png">
+            <h2>Pasar Jual Mobil Bekas</h2>
+            <p>Rp 500.000,00</p>
+            <a href="#" class="btn">See Detail</a>
+        </div>
+        <div class="content slide">
+            <img src="assets/gambar/recomend-3.png">
+            <h2>Hacktiv8 CarWash</h2>
+            <p>Rp 500.000,00</p>
+            <a href="#" class="btn">See Detail</a>
+        </div>
+    </div> -->
+    <!-- RECOMMENDED END -->
+    
+    <!-- Slideshow container -->
+    <div id="recomend" class="slideshow-container"></div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+    
+    <!-- NEXT PREVIOUS BUTTON -->
+    <!-- <button id="nextBtn" class="btn-slide">&#10095;</button>
+    <button id="prevBtn" class="btn-slide">&#10094;</button> -->
+        
+    <!-- DOTS/Progress Dots -->
+    <!-- <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div> -->
+        
+    <!-- CARD START -->
+        <div id="cards" class="card"></div>
+        <!-- CARD END -->
+        
+        
+        <!--  DETAILS ELEMENT-->
+        <div class="detail" id="details">
+            
+        </div>
+        
+        <!-- BORDER LAGI INI LAST BENER
+        <div class="line"></div> -->
+        
+        <!-- TESTIMONIAL START -->
+        <div class="testimoni">
+        <h2 class="judul-testimoni">REVIEWS</h2>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <p>"GG GIMANG BANGET GOADS"</p>
+                    <img src="assets/gambar/user-1.jpg">
+                    <h3>Hecker</h3>
+                </div>
+                <div class="col-3">
+                    <p>"TERIMA KASIH GOADS MARKOTOP"</p>
+                    <img src="assets/gambar/user-2.png">
+                    <h3>Beluga</h3>             
+                </div>
+                <div class="col-3">
+                    <p>"GOADS Mantap SEKALEEE"</p>
+                    <img src="assets/gambar/user-3.jpg">
+                    <h3>Mas Bro</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TESTIMONIAL END -->
+    
+    <!-- FOOTER START -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our Apps</h3>
+                    <p>Download App on PlayStore or AppStore</p>
+                    <div class="app-logo">
+                        <img src="assets/gambar/play-store.png">
+                        <img src="assets/gambar/app-store.svg">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="assets/logo/logo-no-background.png">
+                    <p>Ingin pasang iklan, tapi susah carinya? goAds saja</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join us Now!</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Our Social</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- FOOTER END -->
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="scrollToTopButton" class="scroll-to-top">&#8686;</a>
+
+
+    <!-- SCRIPT -->
+    <script src="index.js"></script>
+    <script src="js/stylescript.js"></script>
+
+</body>
+</html>
+
+
+
+<!-- CORETAN -->
+<!-- <main>
+    <section id="filter">
+        swtich antara jasa dan produk, nanti cards yang tampil di id=cards sesuai filternya
+        <div id="filterProduk">
+            <img src="https://cdn.wikimg.net/en/tcfwiki/images/thumb/9/97/Cultist_Ritual_Item.png/200px-Cultist_Ritual_Item.png" alt="">
+            <h1>Produk</h1>
+        </div>
+        <div id="filterJasa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Spirit_of_Pacu_Jawi.jpg/200px-Spirit_of_Pacu_Jawi.jpg" alt="">
+            <h1>Jasa</h1>
+        </div>
+        
+    </section>
+    <section id="cards">
+        <div class="card" id="card1">
+            <h1>Judul</h1>
+            <p>Nama Bisnis</p> <br>
+            <p>Durasi Pengerjaan</p> <br>
+            <p>target</p> <br>
+            <p>salary</p> <br>
+            <p>status</p>
+        </div>
+    </section>
+</main> -->
+<!-- <div class="recommend-slider">
+    <div class="content">
+    </div>
+</div>
+<div class="recommend-slider">
+    <div class="content">
+    </div>
+    <div class="image">
+    </div>
+</div> -->
